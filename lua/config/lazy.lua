@@ -25,4 +25,12 @@ require('lazy').setup({
     end,
   },
 
+  -- LazyGit ( vim-fugitive and vim-rhubarb are good alternatives ) 
+  {
+    "kdheepak/lazygit.nvim",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+    },
+  },
+
 })
