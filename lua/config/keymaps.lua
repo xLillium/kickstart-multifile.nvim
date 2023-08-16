@@ -1,6 +1,9 @@
+local set_keymap = vim.keymap.set
+-- Making sure Space has no keymaps beforehand
+set_keymap({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
+-- Then defining it as the new leader
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
-local set_keymap = vim.keymap.set
 
 
 --------------------
