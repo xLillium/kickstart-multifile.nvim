@@ -23,5 +23,8 @@ require('lazy').setup({
 
   -- Git Client ( vim-fugitive and vim-rhubarb are good alternatives ) 
   require 'plugins.lazygit',
+  
+  -- Autocompletion
+  require 'plugins.nvim-cmp',
 
 }, {})
