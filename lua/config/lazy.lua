@@ -14,23 +14,14 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
+  -- To automatically import any new plugin from 'lua/custom/plugins/*.lua' :
+  -- { import = 'custom.plugins' },
+  -- But manually requiring them feels more convenient to me
 
-  {
-    -- Theme
-    'catppuccin/nvim',
-    name = 'catppuccin',
-    priority = 1000,
-    config = function()
-      vim.cmd.colorscheme 'catppuccin'
-    end,
-  },
+  -- Theme
+  require 'plugins.catppuccin',
 
-  -- LazyGit ( vim-fugitive and vim-rhubarb are good alternatives ) 
-  {
-    "kdheepak/lazygit.nvim",
-    dependencies = {
-      "nvim-lua/plenary.nvim",
-    },
-  },
+  -- Git Client ( vim-fugitive and vim-rhubarb are good alternatives ) 
+  require 'plugins.lazygit',
 
-})
+}, {})
