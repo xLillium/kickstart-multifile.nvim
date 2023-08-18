@@ -53,3 +53,8 @@ set_keymap('n', '<leader>tp', ':tabp<CR>', { desc = '[T]ab [P]revious' })
 
 -- Lazy Git
 set_keymap('n', '<leader>lg', ':LazyGit<CR>', { desc = 'Open [L]azy[G]it' })
+
+-- Copilot
+set_keymap('n', '<leader>co', ':Copilot panel open<CR>', { desc = '[C]opilot [O]pen' })
+set_keymap('n', '<leader>cn', ':Copilot panel jump_next<CR>', { desc = '[C]opilot [N]ext' })
+set_keymap('n', '<leader>cp', ':Copilot panel jump_prev<CR>', { desc = '[C]opilot [P]revious' })

@@ -26,5 +26,8 @@ require('lazy').setup({
   
   -- Autocompletion
   require 'plugins.nvim-cmp',
+  
+  -- Copilot
+  require 'plugins.copilot',
 
 }, {})
