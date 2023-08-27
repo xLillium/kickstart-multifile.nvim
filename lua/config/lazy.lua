@@ -19,7 +19,7 @@ require('lazy').setup({
   -- But manually requiring them feels more convenient to me
   -- Theme
   require 'plugins.catppuccin',
-  -- Git Client ( vim-fugitive and vim-rhubarb are good alternatives ) 
+  -- Git Client ( vim-fugitive and vim-rhubarb are good alternatives )
   require 'plugins.lazygit',
   -- LSP
   require 'plugins.nvim-lspconfig',
@@ -27,4 +27,6 @@ require('lazy').setup({
   require 'plugins.nvim-cmp',
   -- Copilot
   require 'plugins.copilot',
+  -- Telescope
+  require 'plugins.telescope',
 }, {})
