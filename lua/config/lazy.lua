@@ -29,4 +29,6 @@ require('lazy').setup({
   require 'plugins.copilot',
   -- Telescope
   require 'plugins.telescope',
+  -- Treesitter
+  require 'plugins.nvim-treesitter',
 }, {})
